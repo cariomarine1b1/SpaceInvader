@@ -33,3 +33,17 @@ public abstract class Sprite {
 	
 
 }
+ /* sprite alien */
+
+public Sprite(Bitmap bitmap,float x,float y) {
+	this.bitmap = bitmap;
+	this.x = x;
+	this.y = y;
+	paint = new Paint();
+}
+
+public void draw(Canvas canvas) {
+	canvas.drawBitmap(bitmap, x, y, paint);
+}
+
+/*fin sprite alien */

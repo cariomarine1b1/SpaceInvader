@@ -7,7 +7,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import com.example.android.snake.R;
+
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -28,6 +31,7 @@ public class SpaceInvaderView extends View {
 	// Dimensions souhaitées
 	private static final int TARGET_HEIGHT = 800;
 	private static final int TARGET_WIDTH = 600;
+	private static final String Alien = null;
 
 	private Paint paint; // Style pour le texte	
 	private String text; // texte à afficher
@@ -99,3 +103,11 @@ public class SpaceInvaderView extends View {
 	}
 
 }
+
+
+
+
+
+/* test creation d'alien */
+
+
