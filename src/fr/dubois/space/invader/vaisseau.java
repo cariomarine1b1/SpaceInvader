@@ -1,4 +1,5 @@
-/* création de l'Alien : Marine */
+/*création du vaisseau alien Marine */
+
 
 
 package fr.dubois.space.invader;
@@ -6,9 +7,9 @@ package fr.dubois.space.invader;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 
-public class Alien {
+public class vaisseau {
 
-	public Alien() {
+	public vaisseau() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -17,9 +18,6 @@ public class Alien {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-
-
 
 
 
@@ -34,7 +32,7 @@ private static void setFocusable(boolean b) {
 	
 }
 
-private void loadImage(String alien2, Drawable drawable) {
+private void loadImage(String vaisseau2, Drawable drawable) {
 	// TODO Auto-generated method stub
 	
 }
@@ -44,10 +42,10 @@ private void resetImage(int i) {
 Resources r = ((Object) this.getContext()).getResources();
 
 resetImage(4);
-String Alien;
+String vaisseau;
 
 
-loadImage(Alien, r.getDrawable(R.drawable.Alien)); 
+loadImage(vaisseau, r.getDrawable(R.drawable.vaisseau)); 
 
 
 }
