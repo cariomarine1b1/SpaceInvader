@@ -54,7 +54,7 @@ public class SpaceInvaderView extends View {
 
 	
 
-	void  (){
+	void  init(){
 		paint = new Paint();
 		paint.setStyle(Style.STROKE);
 		paint.setColor(Color.YELLOW);
@@ -72,7 +72,7 @@ public class SpaceInvaderView extends View {
 
 	
         
-		public void bitmap loadImage(int key) {
+		public Bitmap loadImage(int key) {
 		
 		 Resources r = this.getContext().getResources();
 		 Drawable drawable=r.getDrawable(key);
