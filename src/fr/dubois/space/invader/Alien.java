@@ -23,7 +23,7 @@ public class Alien {
 
 
 
-super(context, attrs, defStyle);
+super (context, attrs, defStyle);
 initSpaceInvadersView();
 }
 
@@ -47,7 +47,7 @@ resetImage(4);
 String Alien;
 
 
-loadImage(Alien, r.getDrawable(R.drawable.Alien)); 
+loadImage(Alien,r.getDrawable(R.drawable.Alien)); 
 
 
 }

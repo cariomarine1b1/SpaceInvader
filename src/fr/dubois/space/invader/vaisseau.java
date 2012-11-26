@@ -6,6 +6,7 @@ package fr.dubois.space.invader;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.view.MotionEvent;
 
 public class vaisseau {
 
@@ -20,7 +21,14 @@ public class vaisseau {
 		// TODO Auto-generated method stub
 
 
+		
+		/* marine : gestion des evenements de l'écran tactile */
 
+		private static void onTouchEvent();
+		event.getAction(ACTION_DOWN);
+		event.getAction(ACTION_MOVE);
+		
+		
 super(context, attrs, defStyle);
 initSpaceInvadersView();
 }
@@ -31,6 +39,7 @@ private static void setFocusable(boolean b) {
 	// TODO Auto-generated method stub
 	
 }
+
 
 private void loadImage(String vaisseau2, Drawable drawable) {
 	// TODO Auto-generated method stub
