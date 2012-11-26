@@ -55,8 +55,8 @@ public class SpaceInvaderView extends View {
 
 
 	
-
-	void  (){
+/*Charles*/
+	void init (){
 		paint = new Paint();
 		paint.setStyle(Style.STROKE);
 		paint.setColor(Color.YELLOW);
@@ -72,9 +72,8 @@ public class SpaceInvaderView extends View {
         loadTile(SHIP, r.getDrawable(R.drawable.ship));*/
 	}
 
-	
-        
-		public void bitmap loadImage(int key) {
+ /* Romaric */       
+		public  Bitmap loadimage (int key) {
 		
 		 Resources r = this.getContext().getResources();
 		 Drawable drawable=r.getDrawable(key);
