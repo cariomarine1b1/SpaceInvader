@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import com.example.android.snake.R;
+
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,8 +29,10 @@ import android.view.View;
 public class SpaceInvaderView extends View {
 	
 	// Dimensions souhaitées
+
 	private static final int TARGET_HEIGHT = 1024;
 	private static final int TARGET_WIDTH = 720;
+
 
 	private Paint paint; // Style pour le texte	
 	private String text; // texte à afficher
@@ -52,9 +54,10 @@ public class SpaceInvaderView extends View {
 	}
 
 
-	
 
-	void  init(){
+/*Charles*/
+	void init (){
+
 		paint = new Paint();
 		paint.setStyle(Style.STROKE);
 		paint.setColor(Color.YELLOW);
@@ -70,9 +73,9 @@ public class SpaceInvaderView extends View {
         loadTile(SHIP, r.getDrawable(R.drawable.ship));*/
 	}
 
-	
-        
-		public Bitmap loadImage(int key) {
+ /* Romaric */       
+		public  Bitmap loadimage (int key) {
+
 		
 		 Resources r = this.getContext().getResources();
 		 Drawable drawable=r.getDrawable(key);
@@ -121,3 +124,11 @@ public class SpaceInvaderView extends View {
 	}
 
 }
+
+
+
+
+
+/* test creation d'alien */
+
+
