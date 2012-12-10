@@ -29,15 +29,15 @@ import android.view.View;
 public class SpaceInvaderView extends View {
 	
 	// Dimensions souhaitées
-
 	private static final int TARGET_HEIGHT = 1024;
 	private static final int TARGET_WIDTH = 720;
-
 
 	private Paint paint; // Style pour le texte	
 	private String text; // texte à afficher
 
-
+/*charles*/
+	Alien alien ;
+	
 	public SpaceInvaderView(Context context) {
 		super(context);
 		init();
@@ -54,9 +54,10 @@ public class SpaceInvaderView extends View {
 	}
 
 
-	
 
-	void  (){
+/*Charles*/
+	void init (){
+
 		paint = new Paint();
 		paint.setStyle(Style.STROKE);
 		paint.setColor(Color.YELLOW);
@@ -72,9 +73,9 @@ public class SpaceInvaderView extends View {
         loadTile(SHIP, r.getDrawable(R.drawable.ship));*/
 	}
 
-	
-        
-		public void bitmap loadImage(int key) {
+ /* Romaric */       
+		public  Bitmap loadimage (int key) {
+
 		
 		 Resources r = this.getContext().getResources();
 		 Drawable drawable=r.getDrawable(key);
@@ -97,6 +98,7 @@ public class SpaceInvaderView extends View {
 		super.onDraw(canvas);
 		canvas.drawRGB(0, 0, 0);
 		canvas.drawRect(0, 0, TARGET_WIDTH-1, TARGET_HEIGHT-1, paint);
+		alien.draw(canvas);
 		if (text != null){
 			canvas.drawText(text, canvas.getWidth()/2,canvas.getHeight()/2, paint);
 		}
@@ -123,11 +125,3 @@ public class SpaceInvaderView extends View {
 	}
 
 }
-
-
-
-
-
-/* test creation d'alien */
-
-
